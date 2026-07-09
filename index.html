@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
@@ -18,11 +18,11 @@
     </header>
     <section class="home">
       <div class="home-content">
-        <div class="home-text">
-          <h2>
+        <div class="home-text" >
+          <span>
             Brindamos educación integral y excelencia en todas nuestras
             actividades
-          </h2>
+          </span>
           <h2 class="bold_text">Formación que trasciende</h2>
           <span style="color: rgb(255, 255, 255)">
             Desarrollamos un modelo formativo de educacion personalizada,
@@ -30,7 +30,11 @@
             Catolica</span
           >
         </div>
-        <img class="image1" src="Img/APCE.jpg" alt="APCE" />
+        <img class="image1" src="Img/APCE.jpg" alt="APCE" id="slide1" />
+      </div>
+      <div class="slider-nav">
+        <a href="#slide1"></a>
+        <a href="#slide2"></a>
       </div>
     </section>
 
@@ -58,16 +62,42 @@
         <div class="carousel-container">
           <button class="carousel-btn prev">‹</button>
           <div class="carousel-track">
-            <div class="slide"><div class="item">1</div></div>
-            <div class="slide"><div class="item">2</div></div>
-            <div class="slide"><div class="item">3</div></div>
-            <div class="slide"><div class="item">4</div></div>
-            <div class="slide"><div class="item">5</div></div>
+            <div class="slide">
+              <img src="Img/Optimist.png" class="slide-image" alt="Optimist" />
+            </div>
+            <div class="slide">
+              <img src="Img/Math.png" class="slide-image" alt="APCE" />
+            </div>
+            <div class="slide">
+              <img
+                src="Img/IPC.png"
+                class="slide-image"
+                alt="APCE secondary"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="Img/imyc.png"
+                class="slide-image"
+                alt="Optimist 2"
+              />
+            </div>
+            <div class="slide">
+              <img src="Img/IB.png" class="slide-image" alt="APCE third" />
+            </div>
           </div>
           <button class="carousel-btn next">›</button>
         </div>
       </div>
     </section>
     <script src="slider.js"></script>
+    <section class = "grid-container">
+      <div class="ite" style = "grid-area: box-1" >1</div>
+      <div class="ite" style = "grid-area: box-2" >2</div>
+      <div class="ite" style = "grid-area: box-3" >3</div>
+      <div class="ite" style = "grid-area: box-4" >4</div>
+      <div class="ite" style = "grid-area: box-5">5</div>
+      <div class="ite" style = "grid-area: box-6">6</div>
+    </section>
   </body>
 </html>
