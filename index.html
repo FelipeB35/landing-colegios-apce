@@ -1,44 +1,178 @@
-<!DOCTYPE html>
-<html>  
-    <head>    
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class = "title">Colegios APCE</div> 
-            <div class = "search"> 
-                <ul class = "menu">
-                    <li id="home">Contactos</li>
-                    <li id="about">Sobre nosotros</li>
-                    <li id="testimonials">Testimonios de exalumnos</li>
-                </ul>
-            </div>
-            
-        </header>
-        <section class="home">
-            <div class="home-content">
-                <div class="home-text">
-                    <h2> Brindamos educación integral y excelencia en todas nuestras actividades</h2>
-                    <h2 class="bold_text"> Formación que trasciende</h2>
-                    <span style="color: black;"> Desarrollamos un modelo formativo de educacion personalizada, diferenciada y bilingue, de acuerdo con las enseñanzas de la Iglesia Catolica</span>
-                </div>
-                <img class="image1" src="Img/APCE.jpg" alt="APCE" />
-            </div>
-        </section>
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">Colegios APCE</div>
+      <div class="search">
+        <ul class="menu">
+          <li id="home">Contactos</li>
+          <li id="about">Sobre nosotros</li>
+          <li id="testimonials">Testimonios de exalumnos</li>
+        </ul>
+      </div>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <div class="home-text" >
+          <span>
+            Brindamos educación integral y excelencia en todas nuestras
+            actividades
+          </span>
+          <h2 class="bold_text">Formación que trasciende</h2>
+          <span style="color: rgb(255, 255, 255)">
+            Desarrollamos un modelo formativo de educacion personalizada,
+            diferenciada y bilingue, de acuerdo con las enseñanzas de la Iglesia
+            Catolica</span
+          >
+        </div>
+        <img class="image1" src="Img/APCE.jpg" alt="APCE" id="slide1" />
+      </div>
+      <div class="slider-nav">
+        <a href="#slide1"></a>
+        <a href="#slide2"></a>
+      </div>
+    </section>
 
-        <section class="about">
-            <div class = "about_content">
-                <div class = "about_title">
-                    <h2>Nuestros pilares de formacion</h2>      
-                </div>
+    <section class="about">
+      <div class="about_content">
+        <div class="about_title">
+          <h2>Nuestros pilares de formacion</h2>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="box">
+          <span class="box-icon">📘</span>
+          <span class="box-text">Competencias academicas internacionales y bilinguismo</span>
+        </div>
+        <div class="box">
+          <span class="box-icon">💡</span>
+          <span class="box-text">Calidad e innovacion educativa</span>
+        </div>
+        <div class="box">
+          <span class="box-icon">✝️</span>
+          <span class="box-text">Formacion de virtudes y valores con inspiracion catolica</span>
+        </div>
+        <div class="box">
+          <span class="box-icon">👨‍👩‍👧‍👦</span>
+          <span class="box-text">Participacion de padres de familia</span>
+        </div>
+        <div class="box">
+          <span class="box-icon">🌟</span>
+          <span class="box-text">Formacion centrada en la persona y sus habilidades</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs">
+      <div class="programs_title">
+        <h2>Programas Académicos Internacionales</h2>
+      </div>
+
+      <div class="grid">
+        <div class="carousel-container">
+          <button class="carousel-btn prev">‹</button>
+          <div class="carousel-track">
+            <div class="slide">
+              <img src="Img/Optimist.png" class="slide-image" alt="Optimist" />
             </div>
-        <div class="cards">
-            <div class="box">1</div> 
-            <div class="box">2</div> 
-            <div class="box">3</div> 
-            <div class="box">4</div> 
-            <div class="box">5</div>
-        </div>    
-        </section>  
-    </body>
+            <div class="slide">
+              <img src="Img/Math.png" class="slide-image" alt="APCE" />
+            </div>
+            <div class="slide">
+              <img
+                src="Img/IPC.png"
+                class="slide-image"
+                alt="APCE secondary"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="Img/imyc.png"
+                class="slide-image"
+                alt="Optimist 2"
+              />
+            </div>
+            <div class="slide">
+              <img src="Img/IB.png" class="slide-image" alt="APCE third" />
+            </div>
+          </div>
+          <button class="carousel-btn next">›</button>
+        </div>
+      </div>
+    </section>
+    <script src="slider.js"></script>
+
+    <section class="grid-container">
+      <div class="ite box-image" style="grid-area: box-1">
+        <img src="Img/APCE3.jpg" alt="APCE3" />
+      </div>
+      <div class="ite text-panel" style="grid-area: box-2">
+        <span class="panel-label">Formación personalizada</span>
+        <h2 class="imp">Cada estudiante tiene una historia que merece ser escuchada.</h2>
+        <span class="inf">Acompañamos a cada alumno con una educación que reconoce sus talentos, fortalece su carácter y le ayuda a crecer con seguridad, responsabilidad y propósito.</span>
+      </div>
+      <div class="ite text-panel family-panel" style="grid-area: box-3">
+        <span class="panel-label">Familia y colegio</span>
+        <h2 class="imp">Programas de Formación Familiar</h2>
+        <span class="inf">Creamos espacios donde los padres participan activamente en la formación de sus hijos, construyendo juntos una comunidad educativa más cercana, coherente y humana.</span>
+      </div>
+     
+      <div class="ite" style="grid-area: box-4"></div>
+      <div class="ite" style="grid-area: box-5">
+        <img src="Img/APCE4.jpg" alt="APCE4" />
+        
+      </div>
+      <div class="ite" style="grid-area: box-6"></div>
+    </section>
+    <!-- <section class="mini-carousel-section">
+      <div class="carosel">
+        <div class="group">
+          <div class="card"><img src ="Img/u1.png"></div>
+          <div class="card"><img src ="Img/u2.png"></div>
+          <div class="card"><img src ="Img/u3.png"></div>
+          <div class="card"><img src ="Img/u4.jpg"></div>
+        </div>
+
+        <div class="group" aria-hidden="true">
+          <div class="card">
+            <img src ="Img/u1.png" class="imagen">
+          </div>
+          <div class="card"><img src ="Img/u2.png"></div>
+          <div class="card"><img src ="Img/u3.png"></div>
+          <div class="card"><img src ="Img/u4.jpg"></div>
+        </div>
+      </div>
+    </section> -->
+    <section class = "grid-container2">
+      <div class="ite2" style="grid-area: box-7">
+        <h2 class="datos"> 92% de aprobación de Bachillerato Internacional, con 73% de ex alumnos estudiando en el exterior</h2>
+      </div>
+      <div class="ite" style="grid-area: box-8">
+        <h2 class="datos">Más de 1,000 familias confían en nuestro proyecto educativo</h2> 
+      </div>
+      <div class="ite" style="grid-area: box-9">
+        <h2 class = "datos">Educación bilingüe desde los 16 meses, con más de 15 cursos anuales para padres de familia </h2>
+        <span class ="inf"></span>
+      </div>
+     
+      <div class="ite box-image" style="grid-area: box-10">
+        <img src="Img/APCE5.png">
+      </div>
+      <div class="ite2" style="grid-area: box-11">
+        <h2 class="datos">
+          Preceptoría (coaching personalizado) para padres y alumnos
+        </h2>
+        
+      </div>
+      <div class="ite" style="grid-area: box-12"></div>
+    </section>
+  </body>
 </html>
+
+
+
